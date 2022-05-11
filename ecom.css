@@ -1,0 +1,325 @@
+body{
+  margin: 0;  
+  line-height: 1.5;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+h2,h1,h3,h4,h5,h6{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 2px;
+    width: 100%;
+    background-color: rgb(39, 39, 92);
+    z-index: 10;
+}
+.nav-item{
+    list-style-type: none;
+    display: flex;
+    
+}
+.nav-item li {
+    /* float:left; */
+    text-align: center;
+    display: inline-block;
+}
+.nav-item  a{
+    color: aliceblue;
+    padding: 2px 8px;
+    display: block;
+    background-color: rgb(39, 39, 92);
+    text-decoration: none;
+    justify-content: center;
+}
+.nav-item a:hover{
+    background-color: rgb(110, 28, 28);
+}
+.nav-item a:active{
+    background-color: rgba(95, 91, 99, 0.027);
+}
+ /* start our welcome page */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg,#856d6d 0%,#a32626 100%);
+    
+
+}
+.welcome h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(248, 242, 242);
+}
+.welcome p{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-style: italic;
+    color: rgb(187, 187, 187);
+}
+/* end of our welcome page */
+
+/* start our projects */
+.projects-header{
+ color: rgb(39, 39, 92);
+ margin: 0 auto 6rem auto;
+ max-width: 604px;
+ position: relative;
+ top: 70px;
+}
+.penguin {
+    --penguin-skin: gray;
+    --penguin-belly: WHITE;
+    --penguin-beak: rgb(0, 255, 21);
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+
+  .right-hand {
+    top: 0%;
+    left: -5%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  .left-hand {
+    top: 0%;
+    left: 75%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
+  }
+
+  .right-cheek {
+    top: 15%;
+    left: 35%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .left-cheek {
+    top: 15%;
+    left: 5%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .belly {
+    top: 60%;
+    left: 2.5%;
+    background: var(--penguin-belly, white);
+    width: 95%;
+    height: 100%;
+    border-radius: 120% 120% 100% 100%;
+  }
+
+  .right-feet {
+    top: 85%;
+    left: 60%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: -2222;
+  }
+
+  .left-feet {
+    top: 85%;
+    left: 25%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    z-index: -2222;
+  }
+
+  .right-eye {
+    top: 45%;
+    left: 60%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .left-eye {
+    top: 45%;
+    left: 25%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .sparkle {
+    top: 25%;
+    left: 15%;
+    background: white;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+  }
+
+  .blush-right {
+    top: 65%;
+    left: 15%;
+    background: rgb(219, 55, 82);
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .blush-left {
+    top: 65%;
+    left: 70%;
+    background: rgb(219, 55, 82);
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .beak-top {
+    top: 60%;
+    left: 40%;
+    background: var(--penguin-beak, orange);
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .beak-bottom {
+    top: 65%;
+    left: 42%;
+    background: var(--penguin-beak, orange);
+    width: 16%;
+    height: 10%;
+    border-radius: 50%;
+  }
+ .pengiun {
+    mask-repeat: repeat;
+    animation-name: penguin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+  }  
+  @keyframes pengiun{
+    0%{
+      background-color: rgb(39, 39, 92);
+    }
+    40%{
+      background-color: aqua;
+    }
+    80%{
+      background-color: yellow;
+    }
+    100%{
+      background-color: red;
+    }
+  }
+  .penguin * {
+    position: absolute;
+  }
+  .pengcaption{
+      color: rgb(39, 39, 92);
+      position: absolute;
+      right: 100px;
+  }
+  .center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 30;
+  bottom: 0;
+  left: 10;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0px 10px yellow;
+}
+.heart {
+  position: relative;
+  margin: auto;
+  top: 100px;
+  right: 10px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgb(247, 4, 45);
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+}
+.heart::after {
+  background-color: rgb(39, 39, 92);
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50;
+  left: 25px;
+}
+.heart::before {
+  content:"";
+  background-color: rgb(39, 39, 92);
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+
+/* end of penguin */
+
+/* javascript calculator */
