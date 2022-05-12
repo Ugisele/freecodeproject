@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+div{
+    position: relative;
+    z-index: 2;
+}
+body{
+    background-color: rgb(177, 130, 130);
+    color:  rgb(243, 8, 8);
+    font-family: 'raleway',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.footer{
+    width: 450px;
+    text-align: center;
+    display: block;
+    margin: 15px auto 30px auto;
+    font-size: 0.8em;
+    counter-reset: rgb(241, 7, 7);
+    text-transform: uppercase;
+}
+#quote-box{
+    border-radius: 2px;
+    position: relative;
+    width: 450px;
+    padding: 50px 40px;
+    display: table;
+    background-color: rgb(252, 252, 252);
+
+}
+.quote-text{
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+.quote-text i{
+    font-size: 1em;
+    margin-right: 0.4em;
+    
+}
+.quoter-author{
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 2em;
+    text-align: right;
+}
+.buttoms{
+    margin: auto;
+    display: block;
+}
+.butn{
+    /* height: 40px; */
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(35, 192, 69);
+    outline: none;
+    font-size: 0.8em;
+    padding: 8px 20px 10px 20px;
+    margin-top: 30px;
+    opacity: 1;
+}
+
+#tweet-quote ,#tumblr-quote{
+    float: left;
+    text-align: center;
+    font-size: 1,2em;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+#new{
+    float:right;
+    
+}

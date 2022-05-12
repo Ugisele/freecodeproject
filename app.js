@@ -275,3 +275,8 @@ class output extends React.Component{
  }
 ReactDom.render(<calculator/>,
 document.getElementById('jsapp'));
+
+// style for js
+<style>
+
+#
